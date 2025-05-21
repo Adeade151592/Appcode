@@ -12,7 +12,7 @@ jobs:
             echo $version
             docker build -t Adeade151592/todo-app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-            docker push Adeade151592/todo-app:$version
+            docker push Adeola1592/todo-app:$version
 
   Update_manifest:
     docker:
