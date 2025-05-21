@@ -12,9 +12,9 @@ jobs:
           command: |
             version="build-$CIRCLE_BUILD_NUM"
             echo $version
-            docker build -t Adeola1592/todo-app:$version .
+            docker build -t adeola1592/todo-app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-            docker push Adeola1592/todo-app:$version
+            docker push adeola1592/todo-app:$version
       - run:
           name: Update Manifest File
           command: |
